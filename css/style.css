@@ -39,6 +39,7 @@ section {
 #portfolio, #design, #artwork {
   height: 200px;
   background-attachment: fixed;
+  margin: 0;
 }
 
 #portfolio > div {
@@ -79,18 +80,58 @@ section {
   margin: 10px 0;
 }
 
-footer {
+#mainArt {
+  width: 300px;
+  height: auto;
+  display: inline-block;
+  margin: auto;
+}
+
+#artIntro > p {
+  width: 75%;
+  margin: 10px auto;
+}
+
+.art {
+  height: 300px;
+  overflow: hidden;
+
+}
+
+.art-short {
+  height: 200px;
+  overflow: hidden;
+}
+
+.art > img, .art-short > img {
+  width: 300px;
+  height: auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.artContainer {
   background: #0275d8;
-  height: 500px;
+  padding: 100px;
+  margin: 0;
+}
+
+
+footer {
+  border: 1px solid #090b20;
+  background: #090b20;
+  height: 400px;
+  margin: 0;
 }
 
 footer > #contact {
-  margin: 50px;
-  border: 1px solid #0275d8;
+  color: white;
 }
 
-#contact > h2 {
-  margin: 50px;
+.contact {
+  position: relative;
+  transform: translateY(55%);
 }
 
 @media only screen and (max-width: 768px) {

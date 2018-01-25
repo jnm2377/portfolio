@@ -102,6 +102,20 @@ section {
   transform: translateY(-50%);
 }
 
+.modal-header {
+  height: 150px;
+}
+
+.modalImg {
+  max-width: 400px;
+  max-height: 500px;
+  margin: 10px auto;
+}
+
+.modal-content {
+  height: 100%;
+  overflow: scroll;
+}
 
 #contact {
   border: 1px solid #090b20;

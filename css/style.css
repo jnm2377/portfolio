@@ -116,9 +116,22 @@ footer {
 
 }
 
+#contactMe {
+  margin-top: 20px;
+}
+
 footer > .container > .row {
   padding-top: 50px;
   border: 1px solid transparent;
+}
+
+input, textarea {
+  margin: 0 0 10px 0;
+}
+
+textarea {
+  padding: 10px;
+  height: 100px;
 }
 
 @media (max-width: 1100px) {
@@ -131,9 +144,13 @@ footer > .container > .row {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 770px) {
     .navbar {
         background-color: #edf8b1;
+    }
+
+    footer {
+      height: 700px;
     }
 }
 

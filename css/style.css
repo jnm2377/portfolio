@@ -87,9 +87,13 @@ section {
   margin: auto;
 }
 
-#artIntro > p {
-  width: 75%;
-  margin: 10px auto;
+.my-container {
+  margin: 30px;
+}
+
+.col-md-4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .art {
@@ -130,12 +134,28 @@ footer > #contact {
 }
 
 .contact {
-  position: relative;
-  transform: translateY(55%);
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 @media only screen and (max-width: 768px) {
     .navbar {
         background-color: #edf8b1;
     }
+}
+
+@media (max-width: 490px) {
+  .firstArtRow {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #artIntro {
+    width: 90%;
+  }
+
+  .my-container {
+    margin: 15px 0;
+  }
 }

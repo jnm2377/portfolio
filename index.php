@@ -1,3 +1,21 @@
+<?php
+
+if($_POST["submit"]) {
+    $recipient="your@email.address";
+    $subject="Form to email message";
+    $sender=$_POST["sender"];
+    $senderEmail=$_POST["senderEmail"];
+    $message=$_POST["message"];
+
+    $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
+
+    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
+
+    $thankYou="<p>Thank you! Your message has been sent.</p>";
+}
+
+?>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -332,7 +350,21 @@
         <div class="container contact">
           <h2 class="font-weight-bold text-center">Contact Me</h2>
 
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <?=$thankYou ?>
+
+          <form method="post" action="contact.php">
+              <label>Name:</label>
+              <input name="sender">
+
+              <label>Email address:</label>
+              <input name="senderEmail">
+
+              <label>Message:</label>
+              <textarea rows="5" cols="20" name="message"></textarea>
+
+              <input type="submit" name="submit">
+          </form>
+
         </div>
       </section>
     </footer>

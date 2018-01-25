@@ -82,14 +82,15 @@ section {
   margin: 10px auto;
 }
 
-
-
 .art {
   margin-top: 10px;
   margin-bottom: 10px;
   height: 370px;
   overflow: hidden;
+}
 
+.art2:hover {
+  opacity: 0.6;
 }
 
 .art > img {

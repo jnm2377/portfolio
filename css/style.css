@@ -6,6 +6,7 @@ header,
     height: 100%;
 }
 
+
 #particles-js{
   width: 100%;
   height: 100%;
@@ -43,29 +44,27 @@ section {
   margin-bottom: 50px;
 }
 
+
+
 #portfolio, #design, #artwork {
   height: 200px;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   margin: 0;
 }
 
-#portfolio > div {
+
+#particles-Art, #particles-Development {
   margin: 0;
-  background-color: rgba(2,117,216, 0.7);
+  background-color: #0275d8;
   height: 200px;
 }
 
-#design > div {
+#particles-Design {
   margin: 0;
-  background-color: rgba(9, 11, 32, 0.7);
+  background-color:  #090b20;
   height: 200px;
 }
 
-#artwork > div {
-  margin: 0;
-  background-color: rgba(237, 248, 177, 0.7);
-  height: 200px;
-}
 
 #portfolioText, #artText, #designText {
   margin: 40px auto;
@@ -73,10 +72,6 @@ section {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-}
-
-#artText {
-  color: #090b20;
 }
 
 .font-weight-bold {
@@ -88,11 +83,6 @@ section {
 }
 
 
-.artContainer {
-  background: #0275d8;
-  padding: 50px;
-  margin: 0;
-}
 
 .art {
   margin-top: 10px;

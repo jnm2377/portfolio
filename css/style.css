@@ -83,7 +83,7 @@ section {
 
 .artContainer {
   background: #0275d8;
-  padding: 100px;
+  padding: 50px;
   margin: 0;
 }
 
@@ -151,9 +151,12 @@ footer > #contact {
 
   .art {
     height: 200px;
+    width: 190px;
+    margin: 10px auto;
   }
 
   .art > img {
     width: 160px;
   }
+
 }

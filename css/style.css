@@ -72,7 +72,7 @@ section {
   color: #edf8b1;
   position: relative;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-80%);
 }
 
 .font-weight-bold {
@@ -83,6 +83,17 @@ section {
   margin: 10px auto;
 }
 
+.devimg {
+  display: inline-block;
+  margin: auto;
+  height: 170px;
+  width: auto;
+}
+
+.devc {
+  margin: 20px auto;
+}
+
 .art {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -90,7 +101,7 @@ section {
   overflow: hidden;
 }
 
-.art2:hover {
+.art2:hover, .devc:hover {
   opacity: 0.6;
 }
 
@@ -167,7 +178,18 @@ textarea {
     }
 }
 
+@media (max-width: 545px) {
+  .devimg {
+    height: 250px;
+  }
+}
+
 @media (max-width: 490px) {
+
+  .devimg {
+    height: 200px;
+  }
+
   .artContainer > .row {
     width: 100%;
   }

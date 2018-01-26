@@ -163,6 +163,10 @@ section {
   margin-top: 20px;
 }
 
+.social {
+  margin: auto 10px;
+}
+
 footer > .container > .row {
   padding-top: 50px;
   border: 1px solid transparent;

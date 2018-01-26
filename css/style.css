@@ -200,6 +200,10 @@ textarea {
     #contact {
       height: 700px;
     }
+
+    .clickedText {
+      height: 300px;
+    }
 }
 
 @media (max-width: 545px) {

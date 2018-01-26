@@ -83,15 +83,25 @@ section {
   margin: 10px auto;
 }
 
-.devimg {
-  display: inline-block;
+
+.dev-img {
+  background-attachment: fixed;
+  background-position: center;
+  height: 150px;
+  background-size: auto 50%;
   margin: auto;
-  height: 170px;
-  width: auto;
 }
 
-.devc {
-  margin: 20px auto;
+.dev-text {
+  color: #edf8b1;
+}
+
+.showText > .container {
+  display: none;
+}
+
+.clicked-dev-img {
+  border-bottom: 5px solid #0275d8;
 }
 
 .art {

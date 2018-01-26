@@ -71,33 +71,70 @@
         </div>
 
         <div class="row">
-<!--  Project 1-->
-          <div class="devc wow flipInX">
-            <img class="devimg" src="dev-img/loteria2.png" alt="Project 1: Loteria Game">
-          </div>
-<!--  Project 2-->
-          <div class="devc wow flipInX">
-            <img class="devimg" src="dev-img/gymrat1.png" alt="Project 2: Workout Tracker App">
+          <div class="view col-md-2 hm-black-light dev-img wow flipInX" id="proj1" style="background-image: url('dev-img/loteria2.png');">
+            <div class="mask flex-center">
+              <h3 class="dev-text">Loteria</h3>
+            </div>
           </div>
 
-          <div class="devc wow flipInX">
-              <img class="devimg" src="dev-img/travel1.png" alt="Project 3: Travel Tracker">
+          <div class="view col-md-2 hm-black-light dev-img wow flipInX" id="proj2" style="background-image: url('dev-img/gymrat1.png');">
+            <div class="mask flex-center">
+              <h3 class="dev-text">GymRat</h3>
+            </div>
+          </div>
+
+          <div class="view col-md-2 hm-black-light dev-img wow flipInX" id="proj3" style="background-image: url('dev-img/travel1.png'); ">
+            <div class="mask flex-center">
+              <h3 class="dev-text">XCursion</h3>
+            </div>
+          </div>
+
+          <div class="view col-md-2 hm-black-light dev-img wow flipInX" id="proj4" style="background-image: url('dev-img/connexus1.png'); ">
+            <div class="mask flex-center">
+              <h3 class="dev-text">Connexus</h3>
+            </div>
+          </div>
+
+          <div class="view col-md-2 hm-black-light dev-img wow flipInX" id="proj5" style="background-image: url('dev-img/travel1.png');">
+            <div class="mask flex-center">
+              <h3 class="dev-text">Blue</h3>
+            </div>
           </div>
         </div>
 
-        <div class="row">
-<!--  Project 3-->
-          <div class="devc wow flipInX">
-              <img class="devimg" src="dev-img/travel1.png" alt="Project 3: Travel Tracker">
+        <div class="showText">
+          <div class="container" id="p1-txt">
+            <h3>Loteria</h3>
+            <p><strong>Technologies:</strong> HTML5, CSS3, JavaScript, jQuery</p>
+            <p>A multi-player game that resembles Bingo, designed and created by myself. Players can choose the number of boards they want generated for the game. An algorithm shuffles the images on the board and the deck of cards at the start of each game. The game announces the winner once a player blacks out their board.</p>
           </div>
-<!--  Project 4-->
-          <div class="devc wow flipInX">
-            <img class="devimg" src="dev-img/connexus1.png" alt="Project 4: Community Board Forum">
+
+          <div class="container" id="p2-txt">
+            <h3>GymRat</h3>
+            <p><strong>Technologies:</strong> Node.js, Express, EJS, MongoDB, JavaScript, HTML5, CSS3, Bootstrap</p>
+            <p>A multi-page web app that is both a social network for bodybuilders and a workout tracker application. The backend utilizes Mongoose and the frontend utilizes EJS. I created the backend models based off of my own knowlegde of lifting.</p>
+          </div>
+
+          <div class="container" id="p3-txt">
+            <h3>XCursion</h3>
+            <p><strong>Technologies:</strong> Node.js, Express, Angular.js, MongoDB, jQuery, HTML5, CSS3</p>
+            <p>A single-page web app with an Express backend and Angular frontend. This app, which tracks the places you've traveled to or want to go to, was a group project. Most of my work was focused on the frontend side, styling our pages. However, I created our "places" model and routes for the backend.</p>
+          </div>
+
+          <div class="container" id="p4-txt">
+            <h3>Connexus</h3>
+            <p><strong>Technologies:</strong> Rails, Node.js, Express, Angular.js, HTML5, CSS3</p>
+            <p>A single-page web app with a Rails backend and an Angular/Express frontend. This app is a community board forum, also built as a group project. For the backend, I created our models and routes - excluding authentication. On the front end, I worked on getting full CRUD with our html forms and http requests.</p>
+          </div>
+
+          <div class="container" id="p5-txt">
+            <h3>Blue</h3>
+            <p><strong>Technologies:</strong> Node.js, Express, Angular.js, MongoDB, Chart.js, HTML5, CSS3</p>
+            <p>A single-page web app with an Express backend and an Angular frontend. I created this app because of my passion for health, but mostly because of my <b>extreme</b> love for data visualization. I wanted to design an app that not only tracked how much water you're drinking on a daily basis, but also helped you visualize it.</p>
           </div>
         </div>
-
-
       </section>
+
 
 
         <section id="design" class="view">
@@ -331,6 +368,62 @@
         $('.carousel').carousel({
             interval: 3000,
         });
+
+        $('.dev-img').hover(
+          (event) => {
+            $(event.currentTarget).removeClass('hm-black-light');
+            $(event.currentTarget).addClass('hm-black-strong');
+          },
+          (event) => {
+            $(event.currentTarget).removeClass('hm-black-strong');
+            $(event.currentTarget).addClass('hm-black-light');
+          });
+
+      $('#proj1').on('click', (event) => {
+        $('.clicked-dev-img').removeClass('clicked-dev-img');
+        $(event.currentTarget).addClass('clicked-dev-img');
+        $('.clickedText').hide();
+        $('.clickedText').removeClass('clickedText');
+        $('.showText').find('#p1-txt').addClass('clickedText');
+        $('.clickedText').show();
+      });
+
+      $('#proj2').on('click', (event) => {
+        $('.clicked-dev-img').removeClass('clicked-dev-img');
+        $(event.currentTarget).addClass('clicked-dev-img');
+        $('.clickedText').hide();
+        $('.clickedText').removeClass('clickedText');
+        $('.showText').find('#p2-txt').addClass('clickedText');
+        $('.clickedText').show();
+      });
+
+      $('#proj3').on('click', (event) => {
+        $('.clicked-dev-img').removeClass('clicked-dev-img');
+        $(event.currentTarget).addClass('clicked-dev-img');
+        $('.clickedText').hide();
+        $('.clickedText').removeClass('clickedText');
+        $('.showText').find('#p3-txt').addClass('clickedText');
+        $('.clickedText').show();
+      });
+
+      $('#proj4').on('click', (event) => {
+        $('.clicked-dev-img').removeClass('clicked-dev-img');
+        $(event.currentTarget).addClass('clicked-dev-img');
+        $('.clickedText').hide();
+        $('.clickedText').removeClass('clickedText');
+        $('.showText').find('#p4-txt').addClass('clickedText');
+        $('.clickedText').show();
+      });
+
+      $('#proj5').on('click', (event) => {
+        $('.clicked-dev-img').removeClass('clicked-dev-img');
+        $(event.currentTarget).addClass('clicked-dev-img');
+        $('.clickedText').hide();
+        $('.clickedText').removeClass('clickedText');
+        $('.showText').find('#p5-txt').addClass('clickedText');
+        $('.clickedText').show();
+      });
+
     </script>
   </body>
 </html>

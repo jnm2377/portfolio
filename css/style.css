@@ -45,7 +45,9 @@ section {
   margin-bottom: 50px;
 }
 
-
+.offer, .offerHeading {
+  margin: 30px auto;
+}
 
 #portfolio, #design, #artwork {
   height: 200px;

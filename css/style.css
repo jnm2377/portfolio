@@ -96,7 +96,7 @@ section {
   color: #edf8b1;
 }
 
-.showText > .container {
+#p2-txt, #p3-txt, #p4-txt, #p5-txt {
   display: none;
 }
 

@@ -384,13 +384,25 @@
             </div>
 
             <div class="col-md-6">
-              <form action="https://formspree.io/josefinanoemi4@gmail.com"
+              <?=$thankYou ?>
+
+              <form method="post" action="contact.php">
+                  <input name="sender" type="text" placeholder="Name" required>
+
+                  <input name="senderEmail" type="text" placeholder="Your Email" required>
+
+                  <textarea rows="5" cols="20" name="message" placeholder="Tell me about your project idea. What's it for? What features would you like to have? I'll get back to you soon!" required></textarea>
+
+                  <input type="submit" name="submit" class="btn btn-dark">
+              </form>
+
+              <!-- <form action="https://formspree.io/josefinanoemi4@gmail.com"
           method="POST">
                 <input id="name" type="text" name="name" placeholder="name" required>
                 <input id="email" type="email" name="_replyto" placeholder="youremail@example.com" required>
                 <textarea id="message" name="message" placeholder="Tell me about your project idea. What's it for? What features would you like to have? I'll get back to you soon!" required></textarea>
                 <input type="submit" class="btn btn-dark" value="Send">
-              </form>
+              </form> -->
             </div>
           </div>
         </div>

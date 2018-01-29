@@ -107,7 +107,7 @@ section {
 }
 
 .clickedText {
-  height: 220px;
+  height: 270px;
 }
 
 #p2-txt, #p3-txt, #p4-txt, #p5-txt {
@@ -206,7 +206,7 @@ textarea {
     }
 
     .clickedText {
-      height: 300px;
+      height: 370px;
     }
 }
 
@@ -220,6 +220,10 @@ textarea {
 
   .devimg {
     height: 200px;
+  }
+
+  .clickedText {
+    height: 450px;
   }
 
   .artContainer > .row {

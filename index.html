@@ -13,6 +13,8 @@
     <link href="css/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles  -->
     <link href="css/style.css" rel="stylesheet">
+    <!-- HIGHCHARTS JS  -->
+    <script src="https://code.highcharts.com/stock/highstock.src.js"></script>
   </head>
 
 
@@ -28,7 +30,7 @@
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto" id="nav-ul">
@@ -64,6 +66,53 @@
         <p>I'm an <b>Austin, Tx</b> (yes, native Austinite) based <b>web developer</b> with a background in <b>multimedia journalism and design</b>. My interest in web development stemmed from my work in journalism, where I started out designing things for print. But I wanted to design for more than just print, I wanted to be able to build websites. So I learned to do just that.</p>
 
         <p>My passions in life include: <b>my pitbull baby, Gunny</b> (who you can see a painting of in my <a href="#artwork">artwork section</a>), <b>fitness and health</b> (but not so much the cardio cause let's be honest, who likes the cardio?), and watching <b>Grey's Anatomy and This is Us</b> (they both wreck me equally and I am not ashamed). </p>
+
+        <div id="skillsChart" style="min-width: 310px; max-width: 800px; height: 400px; margin: 0 auto"></div>
+
+        <script type="text/javascript">
+        Highcharts.chart('skillsChart', {
+          chart: {
+              type: 'bar'
+          },
+          colors: [ '#090b20'],
+          title: {
+              text: null
+          },
+          xAxis: {
+              categories: ['JavaScript', 'HTML', 'CSS', 'Bootstrap', 'jQuery', 'Node.js', 'Express.js', 'Angular.js', 'Mongoose', 'Ruby on Rails', 'PostgreSQL'],
+              title: {
+                  text: null
+              }
+          },
+          yAxis: {
+              min: 0,
+              title: {
+                  text: null,
+                  align: 'high'
+              },
+              labels: {
+                  overflow: 'justify'
+              }
+          },
+          tooltip: {
+              valueSuffix: ''
+          },
+          plotOptions: {
+              bar: {
+                  dataLabels: {
+                      enabled: false
+                  }
+              }
+          },
+          credits: {
+              enabled: false
+          },
+          series: [{
+              name: 'Skill Level',
+              data: [18, 19, 19, 15, 12, 16, 16, 17, 16, 11, 13]
+          }]
+});
+        </script>
 
         <h2 class="text-center offerHeading"><strong>What I Offer</strong></h2>
         <div class="row offer">

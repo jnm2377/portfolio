@@ -21,6 +21,10 @@ header,
     background-color: transparent;
 }
 
+.navbar-toggler > span{
+  color: #0275d8;
+}
+
 .top-nav-collapse {
     background-color: #edf8b1;
 }

@@ -60,7 +60,7 @@
 <!-- PARTICLES LANDING PAGE -->
       <div id="particles-js" class="view fadeIn" >
         <div class="containsWelcome">
-          <h2 id="welcome">Hi, I'm <span>Josefina</span>. I'm a fullstack web developer and designer.</h2>
+          <h2 id="welcome">Hi, I'm <span>Josefina</span>. I'm a front end web developer and designer.</h2>
         </div>
       </div>
     </header>
@@ -68,61 +68,43 @@
     <main>
 <!-- ABOUT SECTION ==========================================-->
       <section id="about" class="container wow fadeIn">
-        <h2 class="font-weight-bold text-center">About this developer</h2>
+        <h2 class="font-weight-bold text-center">About me</h2>
       </section>
 
       <section class="container wow fadeIn">
-        <p>I'm an <b>Austin, Tx</b> (yes, native Austinite) based <b>web developer</b> with a background in <b>multimedia journalism and design</b>. My interest in web development stemmed from my work in journalism, where I started out designing things for print. But I wanted to design for more than just print, I wanted to be able to build websites. So I learned to do just that.</p>
+        <p>I'm an Austin based web developer with a background in multimedia journalism and design. My interest in web development stemmed from my work in journalism, where I started out designing things for print. Through that, I realized I wanted to design for more than just print, I wanted to be able to build websites. So I learned to do just that.</p>
 
-        <p>My passions in life include: <b>my pitbull baby, Gunny</b> (who you can see a painting of in my <a href="#artwork">artwork section</a>), <b>fitness and health</b> (but not so much the cardio cause let's be honest, who likes the cardio?), and watching <b>Grey's Anatomy and This is Us</b> (they both wreck me equally and I am not ashamed). </p>
+        <p>As a developer and designer, the technologies I work with include:</p>
 
-        <div id="skillsChart" style="min-width: 310px; max-width: 800px; height: 400px; margin: 0 auto"></div>
+        <ul class="row">
+          <div class="col-md-4">
+            <li>JavaScript</li>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Bootstrap</li>
+            <li>jQuery</li>
+          </div>
 
-        <script type="text/javascript">
-          Highcharts.chart('skillsChart', {
-            chart: {
-                type: 'bar'
-            },
-            colors: [ '#090b20'],
-            title: {
-                text: null
-            },
-            xAxis: {
-                categories: ['JavaScript', 'HTML', 'CSS', 'Bootstrap', 'jQuery', 'Node.js', 'Express.js', 'Angular.js', 'Mongoose', 'Ruby on Rails', 'PostgreSQL', 'Adobe Illustrator', 'Adobe Photoshop'],
-                title: {
-                    text: null
-                }
-            },
-            yAxis: {
-                visible: true,
-                min: 0,
-                title: {
-                    text: null,
-                    align: 'high'
-                },
-                labels: {
-                    overflow: 'justify'
-                }
-            },
-            tooltip: {
-                valueSuffix: ''
-            },
-            plotOptions: {
-                bar: {
-                    dataLabels: {
-                        enabled: false
-                    }
-                }
-            },
-            credits: {
-                enabled: false
-            },
-            series: [{
-                name: 'Skill Level',
-                data: [17, 18, 18, 15, 12, 16, 16, 17, 16, 11, 13, 18, 17]
-            }]
-          });
-        </script>
+          <div class="col-md-4">
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>Angular</li>
+            <li>MongoDB</li>
+            <li>Ruby on Rails</li>
+            <li>PostgreSQL</li>
+          </div>
+
+          <div class="col-md-4">
+            <li>Git</li>
+            <li>WordPress</li>
+            <li>Adobe Illustrator</li>
+            <li>Adobe Photoshop</li>
+            <li>Adobe InDesign</li>
+          </div>
+
+        </ul>
+
+        <p>My other passions in life include: my pitbull baby Gunny (who you can see a painting of in my <a href="#artwork">artwork section</a>), fitness and health and watching GOT, Grey's Anatomy and This is Us (the last two wreck me equally and I am not ashamed).</p>
 
         <h2 class="text-center offerHeading"><strong>What I Offer</strong></h2>
         <div class="row offer">
@@ -135,7 +117,7 @@
           <div class="col-md-4">
             <p class="text-center blue-text"><i class="fa fa-code fa-4x" aria-hidden="true"></i></p>
             <h3 class="text-center">Design</h3>
-            <p class="text-center">After brainstorming and researching, my next step is to begin wireframing, so that I have a clear vision about what I need for my code. My experience in design allows me to build not only an effective backend, but a beautiful and intuitive frontend as well.</p>
+            <p class="text-center">After brainstorming and researching, my next step is to begin wireframing, so that I have a clear vision about what I need for my code. My experience in design allows me to build not only an effective backend, but a beautiful and intuitive front end as well.</p>
           </div>
           <div class="col-md-4">
             <p class="text-center blue-text"><i class="fa fa-paper-plane-o fa-4x" aria-hidden="true"></i></p>
@@ -249,9 +231,7 @@
 
         <section class="container">
           <div class="row wow fadeIn">
-            <p>One of the things I love most about web development is that I can constantly implement my design skills into the apps and websites I create. Having an understanding of graphic design principles like hierarchy, balance, typography, hues, spacing, and others, allows me to build sites that are intuitive and visually pleasing. Below are some of my favorite graphic design projects.</p>
-
-            <p>A little sidenote: I <b>love</b> data visualization. I am a data-viz nerd. I love looking at visuals. I love their colors. I love maps, especially choropleth maps. I love how they tell a story about data. It is beautiful to me. Now that I've said my part, <strong>click on the images</strong> to see more.</p>
+            <p>One of the things I love most about web development is that I can constantly implement my design skills into the apps and websites I create. Having an understanding of graphic design principles like hierarchy, balance, typography, hues, spacing, and others, allows me to build sites that are intuitive and visually pleasing. Below are some of my favorite graphic design projects. <strong>Click on the images</strong> to see more.</p>
           </div>
 
           <div class="row">
@@ -408,7 +388,7 @@
 
         <section class="container">
           <div class="row">
-            <p class="wow fadeIn">In my free time, I enjoy making art. I have been drawing since I was a young girl; it's one of my fondest memories with my grandpa, who taught me. Being an artist is a big part of why I got into graphic design. Below are a few of my favorite pieces. The first image you see is a portrait of my dog, painted with gouache watercolors. The second image is an ink drawing of a rose from various angles. The drawing is comprised entirely of lines and no actual filling-in for the values. The last image you see was inspired by my dog's portrait, also made with gouache watercolors. Besides ink and watercolor, my next favorite medium to draw in is charcoal.</p>
+            <p class="wow fadeIn">In my free time, I enjoy making art. I have been drawing since I was a young girl; it's one of my fondest memories with my grandpa, who taught me. <b>Being an artist is a big part of why I got into graphic design</b>, and it helps my creativy when it comes to front end development. Below are a few of my favorite pieces.</p>
 
             <a href="https://www.instagram.com/mankilla_art/" target="_blank"><button class="btn btn-dark wow fadeIn">See More Artwork</button></a>
           </div>
@@ -445,7 +425,7 @@
           method="POST">
                 <input id="name" type="text" name="name" placeholder="name" required>
                 <input id="email" type="email" name="_replyto" placeholder="youremail@example.com" required>
-                <textarea id="message" name="message" placeholder="Tell me about your project idea. What's it for? What features would you like to have? I'll get back to you soon!" required></textarea>
+                <textarea id="message" name="message" placeholder="Tell me about your project idea." required></textarea>
                 <input type="submit" class="btn btn-dark" value="Send">
               </form>
             </div>

@@ -49,6 +49,18 @@ section {
   margin-bottom: 50px;
 }
 
+.skills {
+  /* border: 1px solid red; */
+  padding: 0;
+  max-width: 500px;
+}
+
+.skillsCol {
+  /* border: 1px solid gold; */
+  list-style-type: none;
+  color: #0275d8;
+}
+
 .offer, .offerHeading {
   margin: 40px auto;
 }

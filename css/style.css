@@ -51,14 +51,27 @@ section {
 
 .skills {
   /* border: 1px solid red; */
-  padding: 0;
-  max-width: 500px;
+  padding: 10px 0;
+  /* margin: 50px auto; */
+
 }
 
 .skillsCol {
   /* border: 1px solid gold; */
   list-style-type: none;
+}
+
+.skillsCol > li {
   color: #0275d8;
+}
+
+.skillsCol > li > .btn {
+  /* border: 1px solid green; */
+  display: block;
+  margin: 5px auto;
+  width: 200px;
+  background-color: #edf8b1;
+  color: #0275d8 !important;
 }
 
 .offer, .offerHeading {
